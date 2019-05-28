@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gestão > Monitoramento | SISPOU - Sistema gerenciador de pousadas</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="csss/css/main.css">
+  <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-sispou sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="dashboard.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>SIS</b><br /><small>POU</small></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="dist/img/logo-dashboard.png" alt="" width="90"></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="pesquisa-reservas">
+          <form action="#" method="get" class="sidebar-form col-sm">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat btn-left"><i class="fa fa-search"></i>
+                </button>
+              </span>
+              <input type="text" name="q" class="form-control" placeholder="Pesquisar reservas...">
+            </div>
+          </form>
+        </div>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown help-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-life-ring fa-lg"></i>
+                <span class="label label-danger"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header text-center">Você não tem chamados pendentes</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li><!-- start message -->
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-bell fa-lg"></i>
+                <span class="label label-danger"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header text-center">Você não tem notificações</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown account account-menu" role="presentation">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ui-avatars.com/api/?rounded=true&background=1b2d3b&color=fff&name=Pousada+Teste" class="user-image" alt="User Image">
+                <span class="hidden-xs">Pousada Teste <small class="fas fa-caret-down icon-perfil-header"></small></span>
+              </a>
+              <ul class="dropdown-menu content-account-menu">
+                <li class="item treeview">
+                  <a href="alterar-senha.html">Alterar minha senha</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="isDisabled">Estabelecimentos</a>
+                </li>
+                <li class="item">
+                  <a href="configuracoes.html">Configurações</a>
+                </li>
+                <li class="item">
+                  <a href="login.html">Sair</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="https://ui-avatars.com/api/?rounded=true&background=1b2d3b&color=A7B254&name=Pousada+Teste" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <h4>Pousada Teste</h4>
+            <p>Nome do usuário</p>
+          </div>
+        </div>
+
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="">
+            <a href="index.html">
+              <i class="fa fa-home"></i>
+              <span>Ínicio</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-users"></i>
+              <span>Clientes</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pessoa.html"><i class="fa fa-circle-o"></i> Pessoa</a></li>
+              <li><a href="agente.html"><i class="fa fa-circle-o"></i> Agente (guia)</a></li>
+              <li><a href="empresa.html"><i class="fa fa-circle-o"></i> Empresa</a></li>
+            </ul>
+          </li>
+          <li class="treeview active">
+            <a href="#">
+              <i class="fa fa-chart-line"></i>
+              <span>Gestão Pousada</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="active"><a href="monitoramento.html"><i class="fa fa-circle-o"></i> Monitoramento</a></li>
+              <li><a href="estadia.html"><i class="fa fa-circle-o"></i> Estadias</a></li>
+              <li><a href="reserva.html"><i class="fa fa-circle-o"></i> Reservas</a></li>
+              <li><a href="estoque.html"><i class="fa fa-circle-o"></i> Estoque</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Serviços</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Lembretes</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Relatórios</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-calculator"></i>
+              <span>Financeiro</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="caixa.html"><i class="fa fa-circle-o"></i> Caixa</a></li>
+              <li><a href="contas-receber.html"><i class="fa fa-circle-o"></i> Contas a receber</a></li>
+              <li><a href="contas-pagar.html"><i class="fa fa-circle-o"></i> Contas a pagar</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="pages/calendar.html">
+              <i class="fa fa-credit-card"></i> <span>Meu plano</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Saldo</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Ofertas</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="pages/calendar.html">
+              <i class="fa fa-question-circle"></i> <span>Ajuda</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Meus chamados</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Perguntas frequentes</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Documentação</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Contato</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Monitoramento</h1>
+        <ol class="breadcrumb">
+          <li><a href="#"> Pousada teste</a></li>
+          <li><a href="#"> Gestão Pousada</a></li>
+          <li class="active"> Monitoramento</li>
+        </ol>
+      </section>
+
+      <section class="content">
+          <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h4><i class="icon fa fa-ban"></i> Atenção!</h4>
+            Layout inacabado!
+          </div>
+          <div class="col-md-12 box">
+            <div class="col-md-12">
+              
+            </div>
+            <div class="col-md-12">
+              <div class="box-body no-padding">
+                <div id="calendar"></div>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer footer-sispou">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0
+      </div>
+      <strong>&copy; 2019 Sispou -</strong> Todos direitos reservados
+    </footer>
+    
+    <div class="control-sidebar-bg"></div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="dist/js/adminlte.min.js"></script>
+  <script src="dist/js/demo.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script>
+    $(function () {
+
+      /* initialize the external events
+       -----------------------------------------------------------------*/
+      function init_events(ele) {
+        ele.each(function () {
+
+          // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+          // it doesn't need to have a start or end
+          var eventObject = {
+            title: $.trim($(this).text()) // use the element's text as the event title
+          }
+
+          // store the Event Object in the DOM element so we can get to it later
+          $(this).data('eventObject', eventObject)
+
+          // make the event draggable using jQuery UI
+          $(this).draggable({
+            zIndex        : 1070,
+            revert        : true, // will cause the event to go back to its
+            revertDuration: 0  //  original position after the drag
+          })
+
+        })
+      }
+
+      init_events($('#external-events div.external-event'))
+
+      /* initialize the calendar
+       -----------------------------------------------------------------*/
+      //Date for the calendar events (dummy data)
+      var date = new Date()
+      var d    = date.getDate(),
+          m    = date.getMonth(),
+          y    = date.getFullYear()
+      $('#calendar').fullCalendar({
+        header    : {
+          left  : 'prev,next today',
+          center: 'title',
+          right : 'month,agendaWeek,agendaDay'
+        },
+        buttonText: {
+          today: 'Hoje',
+          month: 'Mês',
+          week : 'Semana',
+          day  : 'Dia'
+        },
+        //Random default events
+        events    : [
+          {
+            title          : 'Evento de dia inteiro',
+            start          : new Date(y, m, 1),
+            backgroundColor: '#f56954', //red
+            borderColor    : '#f56954' //red
+          },
+          {
+            title          : 'Evento Longo',
+            start          : new Date(y, m, d - 5),
+            end            : new Date(y, m, d - 2),
+            backgroundColor: '#f39c12', //yellow
+            borderColor    : '#f39c12' //yellow
+          },
+          {
+            title          : 'Encontro',
+            start          : new Date(y, m, d, 10, 30),
+            allDay         : false,
+            backgroundColor: '#0073b7', //Blue
+            borderColor    : '#0073b7' //Blue
+          },
+          {
+            title          : 'Lanche',
+            start          : new Date(y, m, d, 12, 0),
+            end            : new Date(y, m, d, 14, 0),
+            allDay         : false,
+            backgroundColor: '#00c0ef', //Info (aqua)
+            borderColor    : '#00c0ef' //Info (aqua)
+          },
+          {
+            title          : 'Aniversaro',
+            start          : new Date(y, m, d + 1, 19, 0),
+            end            : new Date(y, m, d + 1, 22, 30),
+            allDay         : false,
+            backgroundColor: '#00a65a', //Success (green)
+            borderColor    : '#00a65a' //Success (green)
+          },
+          {
+            title          : 'Google',
+            start          : new Date(y, m, 28),
+            end            : new Date(y, m, 29),
+            url            : 'http://google.com/',
+            backgroundColor: '#3c8dbc', //Primary (light-blue)
+            borderColor    : '#3c8dbc' //Primary (light-blue)
+          }
+        ],
+        editable  : true,
+        droppable : true, // this allows things to be dropped onto the calendar !!!
+        drop      : function (date, allDay) { // this function is called when something is dropped
+
+          // retrieve the dropped element's stored Event Object
+          var originalEventObject = $(this).data('eventObject')
+
+          // we need to copy it, so that multiple events don't have a reference to the same object
+          var copiedEventObject = $.extend({}, originalEventObject)
+
+          // assign it the date that was reported
+          copiedEventObject.start           = date
+          copiedEventObject.allDay          = allDay
+          copiedEventObject.backgroundColor = $(this).css('background-color')
+          copiedEventObject.borderColor     = $(this).css('border-color')
+
+          // render the event on the calendar
+          // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+          $('#calendar').fullCalendar('renderEvent', copiedEventObject, true)
+
+          // is the "remove after drop" checkbox checked?
+          if ($('#drop-remove').is(':checked')) {
+            // if so, remove the element from the "Draggable Events" list
+            $(this).remove()
+          }
+
+        }
+      })
+
+      /* ADDING EVENTS */
+      var currColor = '#3c8dbc' //Red by default
+      //Color chooser button
+      var colorChooser = $('#color-chooser-btn')
+      $('#color-chooser > li > a').click(function (e) {
+        e.preventDefault()
+        //Save color
+        currColor = $(this).css('color')
+        //Add color effect to button
+        $('#add-new-event').css({ 'background-color': currColor, 'border-color': currColor })
+      })
+      $('#add-new-event').click(function (e) {
+        e.preventDefault()
+        //Get value and make sure it is not null
+        var val = $('#new-event').val()
+        if (val.length == 0) {
+          return
+        }
+
+        //Create events
+        var event = $('<div />')
+        event.css({
+          'background-color': currColor,
+          'border-color'    : currColor,
+          'color'           : '#fff'
+        }).addClass('external-event')
+        event.html(val)
+        $('#external-events').prepend(event)
+
+        //Add draggable funtionality
+        init_events(event)
+
+        //Remove event from text input
+        $('#new-event').val('')
+      })
+    })
+  </script>
+</body>
+</html>

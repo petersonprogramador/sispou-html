@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Estoque | SISPOU - Sistema gerenciador de pousadas</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="csss/css/main.css">
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-sispou sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="dashboard.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>SIS</b><br /><small>POU</small></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="dist/img/logo-dashboard.png" alt="" width="90"></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="pesquisa-reservas">
+          <form action="#" method="get" class="sidebar-form col-sm">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat btn-left"><i class="fa fa-search"></i>
+                </button>
+              </span>
+              <input type="text" name="q" class="form-control" placeholder="Pesquisar reservas...">
+            </div>
+          </form>
+        </div>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown help-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-life-ring fa-lg"></i>
+                <span class="label label-danger"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header text-center">Você não tem chamados pendentes</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li><!-- start message -->
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-bell fa-lg"></i>
+                <span class="label label-danger"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header text-center">Você não tem notificações</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown account account-menu" role="presentation">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ui-avatars.com/api/?rounded=true&background=1b2d3b&color=fff&name=Pousada+Teste" class="user-image" alt="User Image">
+                <span class="hidden-xs">Pousada Teste <small class="fas fa-caret-down icon-perfil-header"></small></span>
+              </a>
+              <ul class="dropdown-menu content-account-menu">
+                <li class="item treeview">
+                  <a href="alterar-senha.html">Alterar minha senha</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="isDisabled">Estabelecimentos</a>
+                </li>
+                <li class="item">
+                  <a href="configuracoes.html">Configurações</a>
+                </li>
+                <li class="item">
+                  <a href="login.html">Sair</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="https://ui-avatars.com/api/?rounded=true&background=1b2d3b&color=A7B254&name=Pousada+Teste" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <h4>Pousada Teste</h4>
+            <p>Nome do usuário</p>
+          </div>
+        </div>
+
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="">
+            <a href="index.html">
+              <i class="fa fa-home"></i>
+              <span>Ínicio</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-users"></i>
+              <span>Clientes</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pessoa.html"><i class="fa fa-circle-o"></i> Pessoa</a></li>
+              <li><a href="agente.html"><i class="fa fa-circle-o"></i> Agente (guia)</a></li>
+              <li><a href="empresa.html"><i class="fa fa-circle-o"></i> Empresa</a></li>
+            </ul>
+          </li>
+          <li class="treeview active">
+            <a href="#">
+              <i class="fa fa-chart-line"></i>
+              <span>Gestão Pousada</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="monitoramento.html"><i class="fa fa-circle-o"></i> Monitoramento</a></li>
+              <li><a href="estadia.html"><i class="fa fa-circle-o"></i> Estadias</a></li>
+              <li><a href="reserva.html"><i class="fa fa-circle-o"></i> Reservas</a></li>
+              <li class="active"><a href="estoque.html"><i class="fa fa-circle-o"></i> Estoque</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Serviços</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Lembretes</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Relatórios</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-calculator"></i>
+              <span>Financeiro</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="caixa.html"><i class="fa fa-circle-o"></i> Caixa</a></li>
+              <li><a href="contas-receber.html"><i class="fa fa-circle-o"></i> Contas a receber</a></li>
+              <li><a href="contas-pagar.html"><i class="fa fa-circle-o"></i> Contas a pagar</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="pages/calendar.html">
+              <i class="fa fa-credit-card"></i> <span>Meu plano</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Saldo</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Ofertas</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="pages/calendar.html">
+              <i class="fa fa-question-circle"></i> <span>Ajuda</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Meus chamados</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Perguntas frequentes</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Documentação</a></li>
+              <li><a href="#" class="isDisabled"><i class="fa fa-circle-o"></i> Contato</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Estoque</h1>
+        <ol class="breadcrumb">
+          <li><a href="#">Pousada teste</a></li>
+          <li><a href="#">Gestão Pousada</a></li>
+          <li class="active">Estoque</li>
+        </ol>
+      </section>
+
+      <section class="content">
+        <div class="alert alert-warning alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+          <h4><i class="icon fa fa-ban"></i> Atenção!</h4>
+          Layout ainda sendo desenvolvido!
+        </div>
+      </section>
+
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer footer-sispou">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0
+      </div>
+      <strong>&copy; 2019 Sispou -</strong> Todos direitos reservados
+    </footer>
+    
+    <div class="control-sidebar-bg"></div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script>
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/raphael/raphael.min.js"></script>
+  <script src="bower_components/morris.js/morris.min.js"></script>
+  <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="dist/js/adminlte.min.js"></script>
+  <script src="dist/js/pages/dashboard.js"></script>
+  <script src="dist/js/demo.js"></script>
+  <script src="dist/js/main.js"></script>
+</body>
+</html>

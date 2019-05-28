@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login | SISPOU - Sistema gerenciador de pousadas</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="dist/css/animate.css">
+  <link rel="stylesheet" href="dist/css/custom-sispou.css">
+  <link rel="stylesheet" href="csss/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box animated flipInX delay-1s">
+  <div class="login-logo">
+    <img src="dist/img/logo-sispou.png" class="img-responsive" alt="logo">
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Acessar conta</p>
+
+
+    <form action="index.html" method="post">
+
+      <div class="form-group has-feedback form-email">
+        <i class="fa fa-envelope-o form-control-feedback" aria-hidden="true"></i>
+        <input type="text" class="form-control inpt-email" required="required"/>
+        <label for="text" class="lb-email">Email</label>
+        <div class="bar"></div>
+
+      </div>
+      <div class="form-group has-feedback form-pass">
+        <i class="fa fa-lock form-control-feedback" aria-hidden="true"></i>
+        <input type="password" class="form-control inpt-pass" required="required"/>
+        <label for="pass" class="lb-pass">Senha</label>
+        <div class="bar"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 login-remember">
+          <a class="pull-right" href="#"><i>Esqueceu?</i></a>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-access btn-block">Acessar</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <div class="social-auth-links text-center">
+      <a href="#" class="btn btn-block btn-facebook btn-flat">Acessar via Facebook</a>
+    </div>
+    <!-- /.social-auth-links -->
+
+    <div class="row content-login-register">
+      <a href="register.html" class="col-xs-12 text-center"><span>Novo por aqui?</span> Cadastre-se</a>
+    </div>
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<div class="copy-login">
+<span class="info-copy-login"><strong>&copy; 2019 SISPOU</strong> - Todos direitos reservados<br><small><i>Version 1.0</i></small></span>
+</div>
+<!-- /.login-box -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' /* optional */
+    });
+  });
+</script>
+</body>
+</html>
