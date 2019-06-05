@@ -315,6 +315,10 @@ ul.navbar-nav > li.dropdown > a > .label {
   background: #9DB7AC;
 }
 
+.bg-sispou-clean {
+  background: #eee;
+}
+
 .skin-sispou .box.box-primary {
   border-top-color: #789785;
   border-radius: 0;
